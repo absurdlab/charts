@@ -1,0 +1,10 @@
+apiVersion: v2
+name: tigerd
+description: A Helm chart for Kubernetes
+type: application
+
+# Version of the chart
+version: 0.0.1
+
+# Version of the application. Set to latest because we are still in development phase.
+appVersion: "latest"
