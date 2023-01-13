@@ -30,6 +30,12 @@ spec:
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           command: ["tigerd", "server", "--config", "/etc/absurdlab/tigerd/config.yaml"]
+          env:
+            - name: TIGERD_SERVER_JWKS
+              valueFrom:
+                secretKeyRef:
+                  name: {{ .Values.tigerd.server_jwks_secret.name }}
+                  key: {{ .Values.tigerd.server_jwks_secret.key }}
           ports:
             - name: http
               containerPort: 4904

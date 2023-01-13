@@ -4,6 +4,10 @@ tigerd:
   external_url:
   # Application log level, acceptable values are INFO|DEBUG|ERROR|WARN|TRACE
   log_level: INFO
+  # JSON Web Key Set used by the server
+  server_jwks_secret:
+    name:
+    key:
 
 # --- image ---
 image:
