@@ -3,6 +3,16 @@ entries:
   tigerd:
   - apiVersion: v2
     appVersion: latest
+    created: "2023-01-14T11:25:34.688351478Z"
+    description: A Helm chart for Kubernetes
+    digest: 96c314fc2ca905a841c9be65c14cbf8b6b02bfd0a9b2acd7822122a034abac14
+    name: tigerd
+    type: application
+    urls:
+    - https://github.com/absurdlab/charts/releases/download/tigerd-0.0.4/tigerd-0.0.4.tgz
+    version: 0.0.4
+  - apiVersion: v2
+    appVersion: latest
     created: "2023-01-14T11:08:20.062109471Z"
     description: A Helm chart for Kubernetes
     digest: 747e023d265285f9b4a5395ba8297742890bb910103a87f8cc2d3cb504881df1
@@ -31,4 +41,4 @@ entries:
     urls:
     - https://github.com/absurdlab/charts/releases/download/tigerd-0.0.1/tigerd-0.0.1.tgz
     version: 0.0.1
-generated: "2023-01-14T11:08:20.062118671Z"
+generated: "2023-01-14T11:25:34.688482278Z"
