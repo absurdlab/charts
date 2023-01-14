@@ -16,6 +16,9 @@ spec:
       {{- with .Values.deploy.podAnnotations }}
       annotations:
         {{- toYaml . | nindent 8 }}
+        prometheus.io/scrape: "true"
+        prometheus.io/path: "/metrics"
+        prometheus.io/port: "4904"
       {{- end }}
       labels:
         {{- include "tigerd.selectorLabels" . | nindent 8 }}
